@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PREMIO SORPRESA</title>
+</head>
+<body>
+    <center>
+        <h1>SUPERMARKET EL VACANO</h1>
+        <h2>PREMIO SORPRESA POR COMPRAS</h2>
+        <script>
+            //Programa que permita capturar el nombre de un producto, su precio unitario y su cantidad, luego calcular total a pagar, muéstrelo por un mensaje de alerta al usuario, luego permita la captura de la forma de pago (Efectivo, Nequi o Tarjeta de crédito) y validar promoción de aniversario si paga en efectivo y por compras desde $50.0000 se le obsequia un taco de galletas sino una chocolatina, finalmente enviar mensaje Gracias por su compra.
+            const SPeso = new Intl.NumberFormat('es-CO', {
+            style: 'currency',
+            currency: 'COP',
+            minimumFractionDigits: 0
+            });
+            //Entrada.
+            producto=prompt("Ingrese nombre producto");
+            precio=parseInt(prompt("Ingrese precio producto"));
+            cantidad=parseInt(prompt("Ingrese cantidad a comprar"));
+            fpago=parseInt(prompt("Ingrese forma pago [1=Efectivo 2=Nequi 3=Tarjeta crédito]"));
+            //Proceso.
+            total=cantidad*precio;
+            //Salida.
+            alert("Su valor a pagar en caja es... "+SPeso.format(total));
+            document.write("********    PROMOCIÓN DE ANIVERSARIO ***************"+"<br>");
+            document.write("Producto comprado:..." + producto+ "&nbsp&nbsp" +"Precio producto..." + SPeso.format(precio)+"&nbsp&nbsp"+"Cantidad comprada..." + cantidad+"<br>"+"<br>"+"<br>");
+            document.write("Su valor a pagado es ..." + SPeso.format(total)+"<br>");      
+            //Proceso condicional.
+            if (fpago==1 && total>=50000){
+                document.write("RECLAME OBSEQUIO SORPRESA..TACO GALLETAS "+"<br>");
+            } else{
+                document.write("RECLAME OBSEQUIO SORPRESA..CHOCOLATINA"+"<br>");
+            }      
+            document.write("GRACIAS POR SU COMPRA"+"<br>");
+            document.write("*****************************************************"+"<br>"+"<h1>Fin...</h1>");
+        </script>
+    </center>
+</body>
+</html>
