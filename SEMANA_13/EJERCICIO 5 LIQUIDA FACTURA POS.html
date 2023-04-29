@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Factura JavaScript</title>
+</head>
+<body>
+    <center>
+        <h1>FACTURA DE VENTAS CICLO WHILE</h1>
+<script>
+const SPeso = new Intl.NumberFormat('es-CO', {
+        style: 'currency',
+        currency: 'COP',
+        minimumFractionDigits: 0
+        });
+        //Declaración de variables.
+        let nombrep, suma= 0, subt=0, netop=0, desc = 0, iva=0, num = 1, opc=true;
+    //Solo obtiene el nombre del cliente o usuario.
+    nomstd=prompt('Ingrese nombre del cliente ');
+    while (opc==true)
+    {
+  //Obtencion de valores.
+    nombrep=prompt('Ingrese nombre del producto'+num,'');
+    precio=prompt('Ingrese precio del producto a comprar'+num,'');
+    cant=prompt('Ingrese la cantidad deseada a comprar'+num,'');
+    opc=confirm('Desea continuar facturando? --> [ACEPTAR/CANCEL]');
+  //Asigancion de valores y contador para while
+    subt = parseInt(precio)*parseInt(cant);
+    suma += subt;
+    num ++;
+    }
+  //Asignación de valores
+    desc=suma*0.10;
+    iva=(suma-desc)*0.19;
+    netop=suma-desc+iva;
+  //Salidad de datos para el usuario.
+    document.write('**********************************************************'+'<br>');
+    document.write('**************'+'ALMACEN EL VACANO:'+'*************'+'<br>'+'<br>');
+    document.write('*************'+'SU FACTURA POS:'+'****************'+'<br>'+'<br>');
+    document.write('PRODUCTOS COMPRADOS:  '+(num-1)+'<br>'+'<br>');
+    document.write('SUBTOTAL:'+'<br>'+'<br>');
+    document.write(SPeso.format(suma) +'<br>'+'<br>');
+    document.write('Descuento:'+'<br>'+'<br>');
+    document.write(SPeso.format(desc) +'<br>'+'<br>');
+    document.write('Iva:'+'<br>'+'<br>');
+    document.write(SPeso.format(iva) +'<br>'+'<br>');
+    document.write('Neto a pagar:'+'<br>'+'<br>');
+    document.write(SPeso.format(netop)+'<br>'+'<br>');
+    document.write('*****************'+'ATENDIDO POR: '+nomstd+'****************'+'<br>'+'<br>');
+    document.write('*********************'+'GRACIAS POR SU COMPRA:'+'*****************'+'<br>');
+</script>
+</center>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While promedio notas std</title>
+    <!-- link de sitio Sweetalert mensajes más elegantes-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <center>
+        <img src="./img/incap.png" alt="Logo Incap" width="150" height="150">
+        <h1>BOLETIN DE NOTAS PROGRAMACION</h1>
+        <h2>MATERIA PAE01 JAVASCRIPT</h2>
+        <script>
+            let nota_STD, suma=0, prom=0,num=1;//Declaración de variables y definición de datos.
+            //Entrada
+            nomb_std=prompt("Ingrese nombre estudiante");
+            //Proceso  ciclo while ingreso de tres notas del estudiante.
+            while (num<=3) {
+                nota_STD=parseFloat(prompt("Ingrese nota: [1=DESEMPEÑO,2=TALLERES, 3=EXAMENES]"));
+                //Acumulador: suma notas estudiante.
+                suma+=nota_STD;
+//Contador de notas.
+                num++;
+            }
+            prom=suma/(num-1);//Es lo mismo que si colocaramos prom=suma/3.
+            //valida calificacion
+            if (prom>=3.0) {
+                swal("Apreciado estudiante","APROBASTE MATERIA PAE","success");
+            }else{
+                swal("Apreciado estudiante","REPROBASTE MATERIA PAE","error");
+            }
+            document.write("<br>");
+            document.write("NOTA FINAL DE PROGRAMACION MATERIA PAE..."+prom.toFixed(2));//toFixed para mostrar valores flotantes o decimales.
+        </script>
+    </center>
+</body>
+</html>
