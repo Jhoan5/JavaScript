@@ -1,0 +1,49 @@
+body{
+    background-color: gray;
+}
+h1{
+    text-align: center;
+}
+#contenedor {
+    margin: auto;
+    width: 80%;
+    height: 500px;
+
+}
+
+#contenedor .fila{
+    width: 100%;
+    min-height: 35px;
+    height: auto;
+
+}
+
+#contenedor .fila #visor{
+    width:100%;
+    height: 660px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+
+}
+
+#contenedor .fila .miniaturas {
+    width: 167.2px;
+    height: 86px;
+    border-radius: 10px;
+    float: left;
+
+}
+
+.imagen_miniatura{
+    width: 90%;
+    height: 80px;
+    border-radius: 10px;
+    padding-left: 10px;
+   }
+
+.imagenp{
+    width: 100%;
+    height: 660px;
+    border-radius: 10px;
+    
+}
