@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJERCICIO-1</title>
+    <!-- link fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- Sección de enlaces -->
+    <link rel="stylesheet" href="../css/LIST GRID.css">
+    <script src="../js/LIST GRID.js"></script>
+</head>
+<body>
+    <!-- Configurar plantilla bootstrap para modo vista list view -->
+    <!-- MAIN -->
+<div class="main">
+
+    <h1>TIENDA MI PC.COM</h1>
+    <hr>
+    
+    <h2>PORTAFOLIO DE TIENDA ONLINE</h2>
+    <div id="btnContainer">
+        <button class="btn" onclick="listView()"><i class="fa fa-bars"></i> List</button> 
+        <button class="btn active" onclick="gridView()"><i class="fa fa-th-large"></i> Grid</button>
+        <div><!-- cambio toggle switch-->
+        <input type="checkbox" class="checkbox" id="chk" />
+        <label class="label" for="chk">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+            <div class="ball"></div>
+        </label>
+        </div>
+    </div>
+    <br>
+    
+    <!-- Portfolio Gallery Grid -->
+    <div class="row">
+        <div class="column computador">
+        <div class="content">
+            <a href="IMAGE ZOOM 1.html"><img src="../img/portatiles4.jpg" alt="" style="width:250px; height:250px;"></a>
+            <h4>Portátil Gamer ACER 15.6" </h4>
+            <p>Intel Core i5 - RAM 8GB - HDD 1 TB </p>
+        </div>
+        </div>
+        <div class="column computador">
+        <div class="content">
+            <a href="IMAGE ZOOM 2.html">
+        <img src="../img/portatiles2.jpg" alt="" style="width:250px;height:250px;"></a>
+            <h4>Portatil HP 14"</h4>
+            <p>Intel Core i3- 4 GB RAM- DD 1TB</p>
+        </div>
+        </div>
+        <div class="column computador">
+        <div class="content">
+            <a href="#">
+        <img src="../img/portatiles3.jpg" alt="" style="width:250px;height:250px;"></a>
+            <h4>Portátil ASUS VivoBook 14"</h4>
+            <p>Intel Core i5 - 8GB RAM - SSD 512 GB</p>
+        </div>
+        </div>
+        
+        <div class="column productos">
+        <div class="content">
+            <img src="../img/pollo.jpg" alt="" style="width:250px;height:250px;">
+            <h4>Pollo Entero</h4>
+            <p>Pollo entero Pikoriko congelado.</p>
+        </div>
+        </div>
+        <div class="column productos">
+        <div class="content">
+        <img src="../img/limon.jpg" style="width:250px;height:250px;">
+            <h4>Limones</h4>
+            <p>Limones tangelo x kilo..</p>
+        </div>
+        </div>
+        <div class="column productos">
+        <div class="content">
+        <img src="../img/Arroz.jpg" alt="" style="width:250px;height:250px;">
+            <h4>Arroz</h4>
+            <p>Arroz Diana Bolsa x 500gr.</p>
+        </div>
+        </div>
+    
+        <div class="column cursos">
+        <div class="content">
+            <img src="../img/JAVASCRIPT.png" alt="" style="width:250px;height:250px;">
+            <h4>Javascript</h4>
+            <p>Lenguaje programación Javascript.</p>
+        </div>
+        </div>
+        <div class="column cursos">
+        <div class="content">
+        <img src="../img/css3.png" alt="" style="width:250px;height:250px;">
+            <h4>CSS3</h4>
+            <p>Hoja de estilos CSS3.</p>
+        </div>
+        </div>
+        <div class="column cursos">
+        <div class="content">
+        <img src="../img/HTML5.png" alt="" style="width:250px;height:250px;">
+            <h4>HTML5</h4>
+            <p>Lenguaje páginas web HTML5.</p>
+        </div>
+        </div>
+    <!-- END GRID CONTAINER-->
+    </div>
+    
+    <!-- END MAIN CONTAINER-->
+    </div>
+    <script>
+    //  BOTÓN TOGGLE SWITCHE
+    const chk = document.getElementById('chk');
+    
+    chk.addEventListener('change', () => {
+    document.body.classList.toggle('dark');
+    });
+    </script>
+</body>
+</html>

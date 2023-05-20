@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJERCICIO-3</title>
+    <!-- link hoja css nombre"FILTER TABLE.css" igual que el documento -->
+    <link rel="stylesheet" href="../css/FILTER TABLE.css">
+</head>
+<body>
+<h1>BUSCADOR DE PELÍCULAS FAVORITAS 2021-2022</h1>
+<!-- EVENTO ONKEYUP -->
+<img id="lupa" src="../img/lupa.png">
+<input type="text" id="datos" onkeyup="Buscar()" placeholder="Buscar por nombres de película..">
+<!-- inicio de tabla -->
+<table id="tablaDatos">
+    <!-- Cabecera de la tabla  y configuración del espacio de ancho en pantalla-->
+    <tr class="header">
+    <th style="width:40%;">Nombre Pelicula</th>
+    <th style="width:30%;">Poster / Ver Trailer</th>
+    <th style="width:30%;">Clasificación</th>
+    </tr>
+    <!-- primer pelicula -->
+    <tr>
+    <td>Top Gun: Maverick</td>
+    <td><a href="https://youtu.be/zzBIzYmxatU"><img src="../img/topgun.jpg"></a></td>
+    <td>Acción</td> 
+    </tr>
+    <!-- segunda pelicula -->
+    <tr>
+    <td>Terror en lo profundo</td>
+    <td><a href="https://youtu.be/D9oiSLhmkZA"><img src="../img/terrorp.jpg"></a></td>
+    <td>Suspenso</td>
+    </tr>
+    <!-- tercer pelicula -->
+    <tr>
+    <td>Mujer maravilla 1984</td>
+    <td><a href="https://youtu.be/TCjEKF6dE5k"><img src="../img/wwoman.jpg"></a></td>
+    <td>Acción</td>
+    </tr>
+    <!-- cuarta pelicula -->
+    <tr>
+    <td>Dios no esta muerto 1</td>
+    <td><a href="https://youtu.be/1BsoiBPEGvU"><img src="../img/Dios.png"></a></td>
+    <td>Religiosa</td>
+    </tr>
+    <!-- quinta y ultima pelicula mostrable -->
+    <tr>
+    <td>Uncharted: Fuera del mapa</td>
+    <td><a href="https://youtu.be/gOo9PZB7qJU"><img src="../img/Uncharted.jpg"></a></td>
+    <td>Acción</td>
+    </tr>    
+</table>
+<!-- fin de tabla -->
+<!-- script enlace a JS nombre "FILTER TABLE.js"-->
+<script src="../js/FILTER TABLE.js"></script>
+</body>
+</html>
