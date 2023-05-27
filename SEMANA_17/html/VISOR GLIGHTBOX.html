@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VISOR IMG</title>
+    <link rel="stylesheet" href="../css/visor.css">
+</head>
+<body>
+    <img src="../img/LOGO PLAY.jpg" alt="" width="100" height="100" style="border-radius: 20px; padding: 10px;">
+    <h2 style="text-align: center; text-decoration: underline;">****** VISOR DE IMAGENES LIGHTBOX *******</h2>
+    <br><br>
+    <div class="row">
+        <div class="column">
+            <img src="../img/celular-Huawei-Y9 2019 4G azul.jpg" style="width:100%" onclick="openModal();currentSlide(1)"
+                class="hover-shadow cursor">
+            <figcaption>Celular Huawei Y9</figcaption>
+        </div>
+        <div class="column">
+            <img src="../img/cel Xiaomi Mi10T 128GNegro.jpg" style="width:100%" onclick="openModal();currentSlide(2)"
+                class="hover-shadow cursor">
+            <figcaption>Celular Xioami Mi10T</figcaption>
+        </div>
+        <div class="column">
+            <img src="../img/celular-huawei-y9A-128gb-negro.jpg" style="width:100%" onclick="openModal();currentSlide(3)"
+                class="hover-shadow cursor">
+            <figcaption>Celular Huawei Y9A</figcaption>
+        </div>
+        <div class="column">
+            <img src="../img/cel motorola g20 128gb.jpg" style="width:100%" onclick="openModal();currentSlide(4)"
+                class="hover-shadow cursor">
+            <figcaption>Celular Motorola G20</figcaption>
+        </div>
+    </div>
+    <!-- 2da row -->
+    <div class="row">
+        <div class="column">
+            <img src="../img/portatiles1.jpg" style="width:100%" onclick="openModal();currentSlide(5)"
+                class="hover-shadow cursor">
+            <figcaption>Portatiles1</figcaption>
+        </div>
+        <div class="column">
+            <img src="../img/portatiles2.jpg" style="width:100%" onclick="openModal();currentSlide(6)"
+                class="hover-shadow cursor">
+            <figcaption>Portatiles2</figcaption>
+        </div>
+        <div class="column">
+            <img src="../img/portatiles3.jpg" style="width:100%" onclick="openModal();currentSlide(7)"
+                class="hover-shadow cursor">
+            <figcaption>Portatiles3</figcaption>
+        </div>
+        <div class="column">
+            <img src="../img/portatiles4.jpg" style="width:100%" onclick="openModal();currentSlide(8)"
+                class="hover-shadow cursor">
+            <figcaption>Portatiles4</figcaption>
+        </div>
+    </div>
+    <!-- Seccion de enlaces a cada imagen en Vista modal Lightbox -->
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+            <div class="mySlides">
+                <div class="numbertext">1 / 8</div>
+                <img src="../img/celular-Huawei-Y9 2019 4G azul.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2 / 8</div>
+                <img src="../img/cel Xiaomi Mi10T 128GNegro.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 8</div>
+                <img src="../img/celular-huawei-y9A-128gb-negro.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">4 / 8</div>
+                <img src="../img/cel motorola g20 128gb.jpg" style="width:100%">
+            </div>
+            <!-- seccion portatiles-->
+            <div class="mySlides">
+                <div class="numbertext">5 / 8</div>
+                <img src="../img/portatiles1.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">6 / 8</div>
+                <img src="../img/portatiles2.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">7 / 8</div>
+                <img src="../img/portatiles3.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">8 / 8</div>
+                <img src="../img/portatiles4.jpg" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+            <!-- SECCION DE COLUMNAS IMAGENES EN MINIATURA -->
+
+            <div class="column">
+                <img class="demo cursor" src="../img/cel Xiaomi Mi10T 128GNegro.jpg" style="width:100%"
+                    onclick="currentSlide(1)" alt="">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="../img/celular-Huawei-Y9 2019 4G azul.jpg" style="width:100%"
+                    onclick="currentSlide(2)" alt="">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="../img/celular-huawei-y9A-128gb-negro.jpg" style="width:100%"
+                    onclick="currentSlide(3)" alt="">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="../img/cel motorola g20 128gb.jpg" style="width:100%"
+                    onclick="currentSlide(4)" alt="">
+            </div>
+            <!-- seccion portatiles -->
+            <div class="column">
+                <img class="demo cursor" src="../img/portatiles1.jpg" style="width:100%" onclick="currentSlide(5)" alt="">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="../img/portatiles2.jpg" style="width:100%" onclick="currentSlide(6)" alt="">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="../img/portatiles3.jpg" style="width:100%" onclick="currentSlide(7)" alt="">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="../img/portatiles4.jpg" style="width:100%" onclick="currentSlide(8)" alt="">
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/visor.js"></script>
+</body>
+
+</html>
