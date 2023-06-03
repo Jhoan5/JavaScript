@@ -1,0 +1,23 @@
+body{
+    color: #000;
+    background-color: tomato;
+    padding: 0px;
+    margin: 0px;
+    text-align: left;
+}
+img{
+    height: 150px;
+    width: 150px;
+}
+
+fieldset{
+    color: black;
+}
+form {
+    width: 50%;
+    margin: auto;
+}
+legend{
+    font-size: 25px;
+    font-weight: bold;
+}
