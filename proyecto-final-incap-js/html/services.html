@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Fast</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../foodFast.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+    <!-- Inicio header -->
+    <header>
+        <div class="marca">
+            <img src="../img/foodFast.PNG" alt="">
+            <div class="h1"><h1>Food Fast</h1></div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html"><span class="bi bi-list"></span> Inicio</a></li>
+                <li><a href="./about.html"><span class="bi bi-bookmark"></span> Nosotros</a></li>
+                <li><a href="./services.html"><span class="bi bi-shop"></span> Servicios</li>
+                <li><a href="./contac.html"><span class="bi bi-envelope"></span> Contactanos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Fin header -->
+    <!-- Inicio Tienda -->
+    <section class="containerMenu">
+        <ul class="menu">
+            <li>
+                <button id="todos" class="boton-menu boton-categoria active">Todos</button>
+            </li>
+            <li>
+                <button id="gaseosas" class="boton-menu boton-categoria">Gaseosas</button>
+            </li>
+            <li>
+                <button id="hamburguesa" class="boton-menu boton-categoria">Hamburguesas</button>
+            </li>
+            <li>
+                <button id="perro" class="boton-menu boton-categoria">Perros Calientes</button>
+            </li>
+            <li>
+                <button id="pizza" class="boton-menu boton-categoria">Pizzas</button>
+            </li>
+            <li>
+                <a class="boton-menu boton-carrito" href="./carrito.html"><!-- carrito.html -->
+                    <sapn class="bi bi-cart-fill"></sapn> Carrito <span id="numerito" class="numerito">0</span>
+                </a>
+            </li>
+        </ul>
+    </section>
+    <section class="comidas"><!-- Aqui se mostraran los productos, se rellena con JS -->
+        <h2 class="titulo-principal" id="titulo-principal">Todos los productos</h2>
+        <div id="contenedor-productos" class="contenedor-productos">
+            <!-- JS -->
+        </div>
+    </section>
+    <!-- Fin Tienda -->
+    <!-- Inicio footer -->
+    <footer>
+        <section>
+            <a href="https://www.facebook.com"><span class="bi bi-facebook"></span></a>
+            <a href="https://www.twitter.com"><span class="bi bi-twitter"></span></a>
+            <a href="https://www.instagram.com"><span class="bi bi-instagram"></span></a>
+            <a href="https://www.whatsapp.com"><span class="bi bi-whatsapp"></span></a>
+        </section>
+        <nav>
+            <ul>
+                <li><a href="../index.html"><span class="bi bi-list"></span> Inicio</a></li>
+                <li><a href="./about.html"><span class="bi bi-bookmark"></span> Nosotros</a></li>
+                <li><a href="./services.html"><span class="bi bi-shop"></span> Servicios</li>
+                <li><a href="./contac.html"><span class="bi bi-envelope"></span> Contactanos</a></li>
+            </ul>
+        </nav>
+        <address>
+            <p><a href="#inicio">Food Fast</a></p>
+            <p>correo: FoodFast@tienda.com</p>
+            <p>cel. 0180005546</p>
+            <p>direccion: Bogota Colombia sede centro</p>
+            <p>Todos los derechos reservados a &copy; Jhoan 2023.</p>
+        </address>
+    </footer>
+    <script src="../js/mainCarrito.js"></script>
+</body>
+</html>

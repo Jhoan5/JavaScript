@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Fast</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./foodFast.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+    <!-- Inicio header -->
+    <header>
+        <div class="marca">
+            <img src="./img/foodFast.PNG" alt="">
+            <div class="h1"><h1>Food Fast</h1></div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./index.html"><span class="bi bi-list"></span> Inicio</a></li>
+                <li><a href="./html/about.html"><span class="bi bi-bookmark"></span> Nosotros</a></li>
+                <li><a href="./html/services.html"><span class="bi bi-shop"></span> Servicios</li>
+                <li><a href="./html/contac.html"><span class="bi bi-envelope"></span> Contactanos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Fin header -->
+    <!-- Inicio section de mensaje de bienvenida y video modal -->
+    <section>
+        <h2>Bienvenidos a Food Fast</h2>
+        <a id="enlace_1" onclick="muestraOculta('1')" >Videos promocionales</a>
+        <div id="contenidos_1">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/4hpb5zHlu6A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/vtsBZdvni9M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/n8YwWZy3bcM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/IqNlcDoeSqs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </section>
+    <!-- fin section de mensaje de bienvenida y video modal -->
+    <!-- Inicio section de imagenes -->
+    <section id="containerSlider">
+        <h2>Nuestros productos hamburguesa, perros, pizzas, gaseosas</h2>
+        <article>
+            <img id="imgSlider1" src="./img/proGaseosa.jpg" alt="Nuestras comidas son las mejores">
+            <img id="imgSlider2" src="./img/proHamburguesa.jpg" alt="Nuestras comidas son las mejores">
+            <img id="imgSlider3" src="./img/proPerro.jpg" alt="Nuestras comidas son las mejores">
+            <img id="imgSlider4" src="./img/proPizza.jpg" alt="Nuestras comidas son las mejores">
+        </article>
+    </section>
+    <!-- fin section de imagenes -->
+    <!-- Inicio footer -->
+    <footer>
+        <section>
+            <a href="https://www.facebook.com"><span class="bi bi-facebook"></span></a>
+            <a href="https://www.twitter.com"><span class="bi bi-twitter"></span></a>
+            <a href="https://www.instagram.com"><span class="bi bi-instagram"></span></a>
+            <a href="https://www.whatsapp.com"><span class="bi bi-whatsapp"></span></a>
+        </section>
+        <nav>
+            <ul>
+                <li><a href="./index.html"><span class="bi bi-list"></span> Inicio</a></li>
+                <li><a href="./html/about.html"><span class="bi bi-bookmark"></span> Nosotros</a></li>
+                <li><a href="./html/services.html"><span class="bi bi-shop"></span> Servicios</li>
+                <li><a href="./html/contac.html"><span class="bi bi-envelope"></span> Contactanos</a></li>
+            </ul>
+        </nav>
+        <address>
+            <p><a href="#inicio">Food Fast</a></p>
+            <p>correo: FoodFast@tienda.com</p>
+            <p>cel. 0180005546</p>
+            <p>direccion: Bogota Colombia sede centro</p>
+            <p>Todos los derechos reservados a &copy; Jhoan 2023.</p>
+        </address>
+    </footer>
+    <script src="./js/mostrarOcultar.js"></script>
+</body>
+</html>

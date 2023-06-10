@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Fast</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../foodFast.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    </head>
+<body>
+    <!-- Inicio header -->
+    <header>
+        <div class="marca">
+            <img src="../img/foodFast.PNG" alt="">
+            <div class="h1"><h1>Food Fast</h1></div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html"><span class="bi bi-list"></span> Inicio</a></li>
+                <li><a href="./about.html"><span class="bi bi-bookmark"></span> Nosotros</a></li>
+                <li><a href="./services.html"><span class="bi bi-shop"></span> Servicios</li>
+                <li><a href="./contac.html"><span class="bi bi-envelope"></span> Contactanos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Fin header -->
+    <!-- Inicio section de info -->
+    <section class="infoForm">
+        <h2>Orden especial</h2>
+        <p>Si deseas hacer <em>algún</em> <strong>pedido especial</strong>, puedes llenar el <em>formulario</em> de registro o de lo contrario si quieres <strong>trabajar con nosotros</strong> escribenos al correo y sube tu <strong>hoja de vida</strong>. Te contactaremos lo más pronto posible.</p>
+    </section>
+    <!-- Fin section de info -->
+    <section class="formularios">
+    <!-- Inicio Formulario registro-->
+    <form id="form" class="form" action="">
+            
+        <div class="form-control">
+            <label for="usuario">NOMBRE COMPLETO:</label>
+            <input type="text" placeholder="Ingrese su nombre" id="usuario">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <br>
+            <small>mensaje de error</small>
+        </div>
+        <div class="form-control">
+            <label for="telefono">NÚMERO DE TELEFONO:</label>
+            <input type="text" placeholder="Ingrese su número de celular" id="telefono">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <br>
+            <small>mensaje de error</small>
+        </div>
+        <div class="w-100 form-control">
+            <label for="email">EMAIL:</label>
+            <input type="text" placeholder="Ingrese correo" id="email">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <br>
+            <small>mensaje de error</small>
+        </div>
+        <button id="registro" class="w-100 btn btn-lg btn-primary " type="submit" onclick="return validainputs()">Registrar</button>
+        <a class="mt-2 w-100 btn btn-lg btn-primary" href="../index.html" role="button">Volver al inicio</a> 
+    </form>
+        <!-- Fin Forumulario registro-->
+    </section>
+    <!-- Inicio footer -->
+    <footer>
+        <section>
+            <a href="https://www.facebook.com"><span class="bi bi-facebook"></span></a>
+            <a href="https://www.twitter.com"><span class="bi bi-twitter"></span></a>
+            <a href="https://www.instagram.com"><span class="bi bi-instagram"></span></a>
+            <a href="https://www.whatsapp.com"><span class="bi bi-whatsapp"></span></a>
+        </section>
+        <nav>
+            <ul>
+                <li><a href="../index.html"><span class="bi bi-list"></span> Inicio</a></li>
+                <li><a href="./about.html"><span class="bi bi-bookmark"></span> Nosotros</a></li>
+                <li><a href="./services.html"><span class="bi bi-shop"></span> Servicios</li>
+                <li><a href="./contac.html"><span class="bi bi-envelope"></span> Contactanos</a></li>
+            </ul>
+        </nav>
+        <address>
+            <p><a href="#inicio">Food Fast</a></p>
+            <p>correo: FoodFast@tienda.com</p>
+            <p>cel. 0180005546</p>
+            <p>direccion: Bogota Colombia sede centro</p>
+            <p>Todos los derechos reservados a &copy; Jhoan 2023.</p>
+        </address>
+    </footer>
+    <script src="../js/formulario.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+</body>
+</html>
