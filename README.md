@@ -1,2 +1,2 @@
 # JavaScript
-En este repositorio subiré los ejercicios que desarrollo para aprender JS propuestos por INCAP
+✨En este repositorio subí los ejercicios que desarrollé para aprender JavaScript, propuestos por INCAP en el año 2023 primer semestre✨
